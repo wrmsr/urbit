@@ -8,7 +8,7 @@
           $:  %0                                        ::  state version
               pol=(map ship mast)                       ::  apps by ship
           ==                                            ::
-++  bead  ,[p=(set beam) q=gage]                        ::  computed result
+++  bead  ,[p=(set beam) q=cage]                        ::  computed result
 ++  bone  ,@ud                                          ::  opaque duct
 ++  gift                                                ::  out result <-$
           $%  [%back p=?]                               ::  %mess ack good/bad
@@ -287,7 +287,7 @@
               lot=coin
               tyl=path
           ==
-      ^-  (unit (unit cage))
+      ^-  (unit (unit (pair mark ,*)))
       =+  ^=  vew  ^-  lens                             ::  XX future scry
         %.  :-  use
             :-  [who syd ((hard case) p.lot)]
@@ -305,7 +305,7 @@
           %y  y.vew
           %z  z.vew
         ==
-      |=(a=(unit) (bind a |=(b=* [%noun !>(b)])))
+      |=(a=(unit) (bind a |=(b=* [%noun b])))
     ::
     ++  doze
       |=  [now=@da hen=duct]
@@ -392,8 +392,7 @@
       [%give %crud %gasp-crud p.p.+.sih]
     ::
         %&
-      =+  cay=`gage`q.p.p.+.sih
-      ?.  ?=(@ p.cay)  ~|  %bad-marc  !!
+      =+  cay=`cage`q.p.p.+.sih
       ?+  -.pax  !!
         %d  [%give (best %rush cay)]
         %f  [%give (best %rust cay)]
@@ -418,8 +417,7 @@
           :_  ~  :-  hen
           ?-  -.p.+.sih
             %|  [%give %mean ~ %ford-fail p.p.+.sih]
-            %&  ?.  ?=(@ p.q.p.p.+.sih)  ~|  %bad-marc  !!
-                [%pass [%r pax] %g %mess [our imp] you `cage`q.p.p.+.sih]
+            %&  [%pass [%r pax] %g %mess [our imp] you `cage`q.p.p.+.sih]
           ==
         ::
             %g
@@ -824,8 +822,7 @@
         ^-  [(unit cage) _+>]
         ?>  ?=(%f -.sih)
         ?-  -.p.+.sih
-          &  ?.  ?=(@ p.q.p.p.+.sih)  ~|  %bad-marc  !!
-             [`q.p.p.+.sih +>.$]
+          &  [`q.p.p.+.sih +>.$]
           |  [~ (give %crud %murk-made p.p.+.sih)]
         ==
       ::
@@ -932,7 +929,7 @@
         ::
             %w                                          ::  autoboot
           ?>  ?=([%drug @ @ ~] t.pax)
-          =+  :*  sin=((hard ,[%c %writ p=(unit)]) q.hin)
+          =+  :*  sin=((hard ,[%c %writ p=riot]) q.hin)
                   our=(need (slaw %p i.t.t.pax))
                   syd=(need ((sand %tas) i.t.t.t.pax))
               ==

@@ -2,16 +2,9 @@
 ::::  /hoon/core/mime/mar
   ::
 /?  314
-|_  own=mime
+|_  own=[p=mite q=octs]
 ++  grab                                                ::  convert from
   |% 
-  ++  noun  mime                                        ::  clam from %noun
-  --
-++  grad
-  |%
-  ++  form  %mime
-  ++  diff  |=(mime +<)
-  ++  pact  |=(mime +<)
-  ++  join  |=([mime mime] `(unit mime)``+<-)
+  ++  noun  ,[mite octs]                                ::  clam from %noun
   --
 --

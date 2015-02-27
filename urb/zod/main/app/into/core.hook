@@ -4,7 +4,7 @@
 |_  [hid=hide ~]
 ++  peer  ,_`.
 ++  poke-into-args
-  |=  [ost=bone you=ship pax=path dat=cage ~]
+  |=  [ost=bone you=ship pax=path dat=@ ~]
   :_  +>.$
   :*  [ost %pass /into %c %info our.hid (foal pax dat)]
       [ost %pass / %g %cide %$]

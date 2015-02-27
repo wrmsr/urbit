@@ -9,13 +9,6 @@
                 ==
       ++  hymn  ;html:(head:"{psal}" body)
   --
-++  grab
-  |%                                                    ::  convert from
-  ++  mime  |=([p=mite q=octs] (,@t q.q))
-  ++  noun  ,@t                                         ::  clam from %noun
-  --
-++  grad
-  |%
-  ++  sted  %mime
-  --
---
+++  grab  |%                                            ::  convert from
+          ++  noun  ,@t                                 ::  clam from %noun
+--        --

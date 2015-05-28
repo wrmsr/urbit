@@ -2431,6 +2431,7 @@
 ++  kiss-eyre                                           ::  in request ->$
           $%  [%born ~]                                 ::  new unix process
               [%crud p=@tas q=(list tank)]              ::  XX rethink
+              [%hiss p=mark q=cage]                     ::  outbound user req
               [%init p=@p]                              ::  report install
               [%them p=(unit hiss)]                     ::  outbound request
               [%they p=@ud q=httr]                      ::  inbound response
@@ -2441,6 +2442,7 @@
           ==                                            ::
 ++  gift-eyre                                           ::  out result <-$
           $%  [%mass p=mass]                            ::  memory usage
+              [%sigh p=cage]                            ::  marked http response
               [%thou p=httr]                            ::  raw http response
               [%thus p=@ud q=(unit hiss)]               ::  http request/cancel
               [%veer p=@ta q=path r=@t]                 ::  drop-through
@@ -2488,9 +2490,9 @@
       [%call p=silk q=silk]                             ::  slam
       [%cast p=mark q=silk]                             ::  translate
       [%diff p=silk q=silk]                             ::  diff
-      [%done p=(set beam) q=gage]                       ::  literal
+      [%done p=(set beam) q=cage]                       ::  literal
       [%dude p=tank q=silk]                             ::  error wrap
-      [%dune p=(set beam) q=(unit gage)]                ::  unit literal
+      [%dune p=(set beam) q=(unit cage)]                ::  unit literal
       [%file p=beam]                                    ::  from clay
       [%flag p=@uvH q=silk]                             ::  re-apply user deps
       [%join p=mark q=silk r=silk]                      ::  merge
@@ -2505,8 +2507,13 @@
       [%volt p=(set beam) q=(cask ,*)]                  ::  unsafe add type
   ==                                                    ::
 ::::
+++  gage                                                ::  recursive cage/tang
+  $%  [%& p=cage]                                       ::  success
+      [%| p=tang]                                       ::  error
+      [%tabl p=(list (pair gage gage))]                 ::  table of results
+  ==
 ++  gift-ford                                           ::  out result <-$
-          $%  [%made p=@uvH q=(each gage tang)]         ::  computed result
+          $%  [%made p=@uvH q=gage]                     ::  computed result
               [%mass p=mass]                            ::  memory usage
               [%news ~]                                 ::  fresh depends
           ==                                            ::

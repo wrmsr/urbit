@@ -1157,6 +1157,7 @@
             ?^  ram  raz.bah
             %+  ~(put by raz.bah)  cha
             rum(dod &, bum ?~(cop bum.rum (~(put by bum.rum) did.rum u.cop)))
+          ~&  [%send-buck cop `@p`(mug dam)]
           =^  roc  diz  (zuul:diz now [%buck cop dam ~s0])
           (busk(diz (wast:diz ryn)) xong:diz roc)
         ::
@@ -1255,6 +1256,7 @@
           ++  cock                                      ::    cock:la:ho:um:am
             ^+  .                                       ::  acknowledgment
             ::  ~&  [%back kay dam]
+            ~&  [%send-back kay `@p`(mug dam)]
             =^  pax  diz  (zuul:diz now [%back kay dam ~s0])
             +(+> (busk(diz (wast:diz ryn)) xong:diz pax))
           ::
@@ -1313,20 +1315,22 @@
             ^+  +>
             ?-    -.fud
                 %back
+              ~&  [%back p.fud `@p`(mug q.fud)]
               =.  +>  ?.(=(%full aut) +> cock)          ::  finish key exch
               +>(..la (tuck p.fud q.fud r.fud))
             ::
                 %buck
+              ~&  [%buck p.fud `@p`(mug q.fud)]
               =.  +>  ?.(=(%full aut) +> cock)          ::  finish key exch
               +>(..la (tock p.fud q.fud r.fud))
             ::
                 %bond
-              ::  ~&  [%bond q.fud r.fud]
+              ~&  [%bond q.fud r.fud]
               ?>  =(p:sen:gus p.fud)
               (dear q.fud r.fud ?-(kay %dead ~, %good [~ s.fud]))
             ::
                 %bund
-              ::  ~&  [%bund q.fud r.fud]
+              ~&  [%bund q.fud r.fud]
               ?>  =(p:sen:gus p.fud)
               (deer q.fud r.fud ?-(kay %dead ~, %good [~ s.fud]))
             ::

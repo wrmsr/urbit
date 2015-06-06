@@ -1321,7 +1321,6 @@
             ::
                 %buck
               ~&  [%buck p.fud `@p`(mug q.fud)]
-              =.  +>  ?.(=(%full aut) +> cock)          ::  finish key exch
               +>(..la (tock p.fud q.fud r.fud))
             ::
                 %bond

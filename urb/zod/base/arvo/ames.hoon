@@ -1289,6 +1289,7 @@
                 =+  rum=(~(get by raz.bah) cha)
                 ?~(rum *race u.rum)
             ?.  (gte num did.rum)
+              ~&  %cock-1
               cock                                      ::  always ack a dup
             (coot cha rum(mis (~(put by mis.rum) num [kay ryn dam dut])))
           ::
@@ -1318,7 +1319,7 @@
             ?-    -.fud
                 %back
               ~&  [%back p.fud `@p`(mug q.fud)]
-              =.  +>  ?.(=(%full aut) +> cock)          ::  finish key exch
+              =.  +>  ?.(=(%full aut) +> ~&(%cock-2 cock))    ::  finish key exch
               +>(..la (tuck p.fud q.fud r.fud))
             ::
                 %buck
@@ -1337,7 +1338,7 @@
             ::
                 %carp
               =+  zol=(~(get by olz.weg) s.fud)
-              ?^  zol  cock(kay u.zol)
+              ?^  zol  ~&(%cock-3 cock(kay u.zol))
               =^  neb  nys.weg
                   =+  neb=(~(get by nys.weg) s.fud)
                   ?^  neb  [u.neb nys.weg]
@@ -1347,7 +1348,7 @@
               ?>  =((kins p.fud) p.neb)
               ?>  =(r.fud p.r.neb)
               =+  doy=`(unit ,@)`(~(get by q.r.neb) q.fud)
-              ?^  doy  cock
+              ?^  doy  ~&(%cock-4 cock)
               =>  ^+  .   %=  .
                     q.r.neb  (~(put by q.r.neb) q.fud t.fud)
                     q.neb    +(q.neb)
@@ -1358,7 +1359,7 @@
                     olz.weg  (~(put by olz.weg) s.fud kay)
                   ==
                 (golf p.neb r.neb)
-              =.  +>.$  cock
+              =.  +>.$  ~&(%cock-5 cock) 
               +>.$(nys.weg (~(put by nys.weg) s.fud neb))
             ::
                 %fore

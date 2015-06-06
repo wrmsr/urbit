@@ -1157,7 +1157,7 @@
             ?^  ram  raz.bah
             %+  ~(put by raz.bah)  cha
             rum(dod &, bum ?~(cop bum.rum (~(put by bum.rum) did.rum u.cop)))
-          ~&  [%send-buck cop `@p`(mug dam)]
+          ~&  [%sled-buck cop `@p`(mug dam)]
           =^  roc  diz  (zuul:diz now [%buck cop dam ~s0])
           (busk(diz (wast:diz ryn)) xong:diz roc)
         ::
@@ -1256,7 +1256,7 @@
           ++  cock                                      ::    cock:la:ho:um:am
             ^+  .                                       ::  acknowledgment
             ::  ~&  [%back kay dam]
-            ~&  [%send-back kay `@p`(mug dam)]
+            ~&  [%sled-back kay `@p`(mug dam)]
             =^  pax  diz  (zuul:diz now [%back kay dam ~s0])
             +(+> (busk(diz (wast:diz ryn)) xong:diz pax))
           ::
@@ -1266,7 +1266,9 @@
             =+  cun=(~(get by mis.rum) did.rum)
             ?~  cun
               +>.$(raz.bah (~(put by raz.bah) cha rum))
-            =.  +>.$  cock(kay p.u.cun, dam r.u.cun)
+            =.  +>.$  
+                ~&  [%coot-cock `@p`(mug r.u.cun)]
+                cock(kay p.u.cun, dam r.u.cun)
             =.  +>.$  ?.  =(%good p.u.cun)  +>.$
                       ?>  ?=(^ s.u.cun)
                       %-  emit

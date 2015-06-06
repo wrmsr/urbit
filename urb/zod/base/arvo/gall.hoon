@@ -393,7 +393,9 @@
       ==
     ::
         %way                                            ::  outbound request
-      ?>  ?=([%a %woot *] sih)
+      ?.  ?=([%a %woot *] sih)
+        ~&  [%strange-way pax -.sih +<.sih]
+        !!
       ?>  ?=([@ ~] t.pax)
       %-  mo-awed
       :*  p.+>.sih
@@ -462,7 +464,7 @@
     ?:  =(~ kys.u.suf)
       +>.^$(hen neh, wub (~(del by wub) dap))
     =^  lep  kys.u.suf  [p q]:~(get to kys.u.suf)
-    $(+>.^$ (mo-clip(hen p.lep) dap q.lep r.lep))
+    $(+>.^$ ~&([%mo-claw p.lep q.lep -.r.lep] (mo-clip(hen p.lep) dap q.lep r.lep)))
   ::
   ++  mo-beak                                           ::  build beak
     |=  dap=dude

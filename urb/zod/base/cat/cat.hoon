@@ -14,6 +14,8 @@
 ^-  tang
 =+  ark=;;(arch .^(%cy pax))
 ?^  q.ark
+  ?:  =(%sched -:(flop pax))
+    [>;;((map ,@da cord) .^(%cx pax))<]~
   [leaf/(spud pax) (pretty-file .^(%cx pax))]
 ?-     r.ark                                          ::  handle ambiguity
     ~

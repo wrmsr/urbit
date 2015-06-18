@@ -8,7 +8,7 @@
 ::::
   ::
 |=  [^ [arg=(list path)] ~]
-=-  tang/(zing -)
+=-  tang/(flop `tang`(zing -))
 %+  turn  arg
 |=  pax=path
 ^-  tang

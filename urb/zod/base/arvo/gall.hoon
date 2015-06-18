@@ -918,9 +918,8 @@
       ^+  +>
       =+  cug=(ap-find /lame)
       ?~  cug
-        =.  why  (turn why |=(a=tank rose/[~ "! " ~]^[a]~))
-        ~&  [%ap-lame dap]
-        ~>  %slog.`%*(. >[%ap-lame wut %why]< |2.+> why)
+        =.  why  [>%ap-lame dap wut< (turn why |=(a=tank rose/[~ "! " ~]^[a]~))]
+        ~>  %slog.`%*(. >[%wh %y]< +> (flop why)) 
         +>.$
       =^  cam  +>.$
         %+  ap-call  q.u.cug

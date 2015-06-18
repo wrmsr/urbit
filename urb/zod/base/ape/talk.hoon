@@ -1,9 +1,12 @@
 ::                                                      ::  ::
 ::::  /hoon/talk/app                                    ::  ::
   ::                                                    ::  ::   
-/?  314
-/-  *talk, *sole
-/+  talk, sole
+/?    314
+/-    *talk, *sole
+/+    talk, sole
+/=    talk-doc    
+      /;  |=(a=wain (turn a |=(b=cord [%txt "? {(trip b)}"])))
+      /:  /===/pub/doc/talk/help  /txt/
 ::
 ::::
   ::
@@ -74,6 +77,7 @@
     ::                                                  ::
     ++  work                                            ::  interface action
       $%  [%number p=? q=@ud]                           ::  activate by number
+          [%help ~]                                     ::  print usage info
           [%join p=(set partner)]                       ::  
           [%say p=speech]                               ::
           [%invite p=span q=(list partner)]             ::
@@ -175,18 +179,14 @@
       ++  work
         %+  knee  *^work  |.  ~+
         ;~  pose
-          %+  stag  %create
-          ;~  pfix  (jest %create)
-            ;~  plug
-              ;~(pfix ace pore)
-              ;~(pfix ;~(plug ace cen) sym)
-              ;~(pfix ace qut)
-            ==
+          ;~  (glue ace)  (perk %create ~)
+            pore
+            ;~(pfix cen sym)
+            qut
           ==
         ::
-          %+  stag  %join
-          ;~(pfix (jest %join) ;~(pfix ace parq))
-        ::
+          ;~((glue ace) (perk %join ~) parq)
+          ;~(plug (perk %help ~) (easy ~))
           (stag %number nump)
           (stag %target parz)
         ==
@@ -286,7 +286,8 @@
     ::
     ++  sh-rend                                         ::  print on one line
       |=  gam=telegram
-      (sh-pass:(sh-fact %txt ~(tr-line tr man.she gam)) q.q.gam)
+      =+  lin=~(tr-line tr man.she gam)
+      (sh-pass:(sh-fact %txt lin) q.q.gam) 
     ::
     ++  sh-numb                                         ::  print msg number
       |=  num=@ud
@@ -788,18 +789,20 @@
           %create  (create +.job)
           %target  (target +.job)
           %probe   (probe +.job)
+          %help    (help)
           %say     (say +.job)
         ==
       ::
       ++  activate                                      ::  from %number
         |=  gam=telegram
-        ^+  +>+>+>
+        ^+  ..sh-work
         ~&  [%activate gam]
         sh-prod(active.she `~(tr-pals tr man.she gam))
       ::
+      ++  help  |=(~ (sh-fact %mor talk-doc))           ::  %help
       ++  join                                          ::  %join
         |=  lix=(set partner)
-        ^+  +>+>+>
+        ^+  ..sh-work
         =+  loc=loc.system.she
         %^  sh-tell  %design  man.she
         :-  ~
@@ -815,20 +818,20 @@
       ::
       ++  invite                                        ::  %invite
         |=  [nom=span tal=(list partner)]
-        ^+  +>+>+>
+        ^+  ..sh-work
         !!
       ::
       ++  banish                                        ::  %banish
         |=  [nom=span tal=(list partner)]
-        ^+  +>+>+>
+        ^+  ..sh-work
         !!
       ::
       ++  create                                        ::  %create
         |=  [por=posture nom=span txt=cord]
-        ^+  +>+>+>
+        ^+  ..sh-work
         ?:  (~(has in stories) nom) 
           (sh-lame "{(trip nom)}: already exists")
-        =.  +>+>+>
+        =.  ..sh-work
             %^  sh-tell  %design  nom
             :-  ~
             :+  *(set partner)
@@ -842,7 +845,7 @@
       ::
       ++  number                                        ::  %number
         |=  [rel=? num=@ud]
-        ^+  +>+>+>
+        ^+  ..sh-work
         =+  roy=(~(got by stories) man.she)
         =.  num
             ?.  rel  num
@@ -854,15 +857,15 @@
       ::
       ++  probe                                         ::  inquire
         |=  cuz=station
-        ^+  +>+>+>
+        ^+  ..sh-work
         ~&  [%probe cuz]
-        +>+>+>
+        ..sh-work
       ::
       ++  say                                           ::  publish
         |=  sep=speech
-        ^+  +>+>+>
-        =^  sir  +>+>+>  sh-uniq
-        %=    +>+>+>.$
+        ^+  ..sh-work
+        =^  sir  ..sh-work  sh-uniq
+        %=    ..sh-work
             coz  :_  coz
           [%publish [[sir sh-whom [now.hid ~ sep]] ~]]
         ==

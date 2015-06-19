@@ -107,7 +107,7 @@
 ++  peer-oct3  |=(* abet:tame:(hail &))                 ::  urbit subscribe
 ++  peer-sole  |=(* abet:show:seen)                     ::  console subscribe
 ++  poke-sole-action  |=(sole-action abet:(work +<))    ::  console input
-++  poke-oct3-move  |=(point abet:wild:(kick +<))       ::  urbit move
+++  poke-oct3-move  |=(point abet:(kick +<))            ::  urbit move
 ++  prep  |=  (unit (pair (list move) axon))            ::  update self
           abet:?~(+< +> wild:(heal +<+>))               ::
 ++  pull-oct3  |=(* abet:(hail |))                      ::  urbit unsubscribe

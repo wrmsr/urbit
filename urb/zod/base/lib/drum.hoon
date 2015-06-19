@@ -382,7 +382,7 @@
   ++  se-join                                           ::  confirm connection
     |=  gyl=gill
     ^+  +>
-    =.  +>  (se-text "[linked to {<gyl>}]")
+    ::  =.  +>  (se-text "[linked to {<gyl>}]")
     ?>  =(~ (~(got by fug) gyl))
     (se-alas:se-prom(liv.maz |, fug (~(put by fug) gyl `*target)) gyl)
   ::

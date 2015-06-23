@@ -406,7 +406,7 @@ li:before {
   }
   #nav {
     position: fixed;
-    top: 0;
+    top: 0.6rem;
     opacity: 1;
     width: 42rem;
     margin-left: -21rem;
@@ -454,10 +454,7 @@ li:before {
     z-index: 2;
   }
   #nav > div {
-    max-height: 1.4rem;
-  }
-  #nav > div {
-    padding-top: 0.6rem;
+    max-height: 1rem;
   }
   #nav #sibs > div {
     height: 20px;
